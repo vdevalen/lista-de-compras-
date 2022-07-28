@@ -1,0 +1,47 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    padding: 30px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10%;
+    gap: 1em;   
+    text-align: center;
+    justify-content:space-around; 
+}
+
+/* button.boton-compras{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 15px;
+} */
+
+div.boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.boton-compras{
+    display: inline-block;
+    color:white;
+    background-color: black;
+    border-radius: 15px;
+    margin: 30px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.listaCompra{
+    display: flex;
+    justify-content: center;
+}

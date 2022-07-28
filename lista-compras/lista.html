@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="lista.css">
+</head>
+<body>
+    <div class="titulo">
+        <h1>LISTA DE COMPRAS</h1>
+    </div>
+    
+    <div class="container">
+                    <div class="codigo">
+                        <h4>CODIGO</h4>
+                        <label for="">
+                            <input type="text" placeholder="Ingrese el codigo" class="codigo" id="codigo">
+                        </label>
+                </div>
+
+                <div class="producto">
+                    <h4>PRODUCTO</h4>
+                    <select name="producto" class="producto" id="producto">
+                        <option value="producto" id="producto">Productos</option>
+                        <optgroup label="MUJER">
+                        <option value="sandalias" id="sandalias">Sandalias</option>
+                        <option value="accesorios" id="accesorios">Accesorios</option>
+                        <option value="faldas" id="faldas">Faldas</option>
+                        </optgroup>
+                        <optgroup label="HOMBRE">
+                        <option value="tennis" id="tennis">Tennis</option>
+                        <option value="suaderas" id="suaderas">Suaderas</option>
+                        <option value="gorras" id="gorras">Gorras</option>
+                        </optgroup>
+                        </select>
+                </div>
+
+                <div class="precio">
+                    <h4>PRECIO</h4>
+                    <label for="">
+                        <input type="number" placeholder="Ingrese el precio" class="precio" id="precio">
+                    </label>
+                </div>
+                
+                <div class="cantidad">
+                    <h4>CANTIDAD</h4>
+                    <label for="">
+                        <input type="number" placeholder="Ingrese la cantidad" class="cantidad" id="cantidad">
+                    </label>
+                </div>   
+
+                <div class="subtotal" id="subtotal">
+                    <h4>SUBTOTAL</h4>
+                    
+                </div> 
+    </div>
+
+    <div class="boton">
+        <button onclick="agregarCompras()" class="boton-compras">Calcular</button>
+        </div>
+        <div id="listaCompra" class="listaCompra">
+    </div>
+    
+    <script src="/lista-compras/lista.js"></script>
+</body>
+</html>
